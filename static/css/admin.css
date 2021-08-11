@@ -1,0 +1,957 @@
+.layui-layout-admin .layui-header {
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.layui-layout-admin .layui-header .layui-nav .layui-nav-item a {
+    color: #000;
+}
+
+.layui-layout-admin .layui-side .layui-side-scroll .layui-nav .layui-nav-item a i {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.layui-layout-admin .layui-side .layui-side-scroll .layui-nav .layui-nav-item dl a {
+    margin-left: 15px;
+}
+
+.layuiadmin-pagetabs {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    left: 200px;
+    z-index: 999;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 80px 0 40px;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+    border-top: #eee solid 1px;
+    border-bottom: #eee solid 1px;
+}
+
+.layuiadmin-pagetabs .layui-icon-prev {
+    left: 0;
+    border-left: none;
+    border-right: 1px solid #f6f6f6;
+}
+
+.layuiadmin-pagetabs .layui-tabs-control {
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    box-sizing: border-box;
+    border-left: 1px solid #f6f6f6;
+}
+
+.layuiadmin-pagetabs .layui-icon-next {
+    right: 40px;
+}
+
+.layuiadmin-pagetabs .layui-icon-down {
+    right: 0;
+}
+
+.layuiadmin-pagetabs .layui-tab {
+    margin: 0;
+    overflow: hidden;
+}
+
+.layuiadmin-pagetabs .layui-nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background: 0 0;
+}
+
+.layuiadmin-pagetabs .layuiadmin-tabs-control {
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    box-sizing: border-box;
+    border-left: 1px solid #f6f6f6;
+}
+
+.layuiadmin-tabs-select.layui-nav .layui-nav-item {
+    line-height: 40px;
+}
+
+.layuiadmin-tabs-select.layui-nav .layui-nav-item>a {
+    height: 40px;
+    color: #666;
+}
+
+.layuiadmin-tabs-select.layui-nav .layui-nav-child {
+    top: 40px;
+    left: auto;
+    right: 0;
+}
+
+.layuiadmin-tabs-select.layui-nav .layui-nav-child dd.layui-this,
+.layuiadmin-tabs-select.layui-nav .layui-nav-child dd.layui-this a {
+    background-color: #f2f2f2!important;
+    color: #333
+}
+
+.layuiadmin-pagetabs .layui-tab-title li:first-child .layui-tab-close,
+.layuiadmin-tabs-select.layui-nav .layui-nav-bar,
+.layuiadmin-tabs-select.layui-nav .layui-nav-more {
+    display: none
+}
+
+.layui-layout-admin .layui-body {
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+}
+
+.index .layui-header .layui-nav .layui-this:after,
+.index .layui-header .layui-nav .layui-nav-bar {
+    background-color: #fff;
+}
+
+.console .layui-layout-admin .layuiadmin-pagetabs #LAY_app_tabsheader .layui-this {
+    line-height: 35px;
+    border-top: #009688 solid 3px;
+}
+
+.layui-layout-admin .layui-body .layuiadmin-tabsbody-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.layuiadmin-iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.console .layui-fluid {
+    padding: 15px;
+    background-color: #f2f2f2
+}
+
+.console .layui-fluid #tools .layui-fluid {
+    background-color: #fff;
+}
+
+.console .layui-fluid #tools .layui-icon {
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 30px;
+    background-color: #F8F8F8;
+    color: #333;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+
+.console .console-card .layui-carousel[lay-indicator=outside] .layui-carousel-ind {
+    top: -230px;
+}
+
+.console .console-card .layui-carousel[lay-indicator=outside] .layui-carousel-ind ul {
+    background-color: #fff;
+    float: right;
+    margin-right: 10px;
+}
+
+.console .console-card .layui-carousel-ind li.layui-this,
+.console .console-card .layui-carousel-ind li.layui-this:hover {
+    background-color: #999;
+}
+
+.console .console-card .layui-carousel-ind li,
+.console .console-card .layui-carousel-ind li:hover {
+    background-color: #ccc;
+}
+
+.console .layui-fluid #tools .layui-fluid {
+    padding: 0;
+}
+
+.console .layui-fluid #tools .layui-carousel-arrow {
+    display: none;
+}
+
+.console .layui-fluid #tools .card-block {
+    display: block;
+    cursor: pointer;
+}
+
+.console .layui-fluid #tools .card-block cite {
+    text-align: center;
+    display: block;
+    color: #666;
+    font-size: 14px;
+}
+
+.console .layui-fluid #datashow .layui-fluid {
+    padding: 0;
+    background-color: #fff;
+}
+
+.console .layui-fluid #datashow .layuiadmin-backlog-body {
+    display: block;
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    color: #999;
+    border-radius: 2px;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    cursor: pointer;
+}
+
+.console .layui-fluid #datashow .layuiadmin-backlog-body h3 {
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+.console .layui-fluid #datashow .layuiadmin-backlog-body p cite {
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 300;
+    color: #009688;
+}
+
+.console .layui-fluid #datadesc {
+    width: 100%;
+    margin-bottom: 170px;
+}
+
+.console .layui-fluid #datadesc .layui-fluid {
+    padding: 0;
+    background-color: #fff;
+}
+
+.console .layui-fluid #datadesc #flow-total {
+    width: 100%;
+    height: 400px;
+}
+
+.console .layuidmin-takerates {
+    padding-top: 5px;
+}
+
+.console .layuidmin-takerates .layui-progress {
+    margin: 50px 0 60px;
+}
+
+.console .layuidmin-takerates .layui-progress h3 {
+    position: absolute;
+    right: 0;
+    top: -35px;
+    color: #999;
+    font-size: 14px;
+}
+
+.console .layuidmin-takerates .layui-progress-bar {
+    text-align: left;
+}
+
+.console .layuidmin-takerates .layui-progress-text {
+    top: -35px;
+    line-height: 26px;
+    font-size: 26px;
+}
+
+.console .layui-fluid .layuiadmin-latestData .layui-tab-title {
+    height: 42px;
+    border-bottom-color: #f6f6f6;
+}
+
+.console .layui-fluid .layuiadmin-latestData .layui-tab-title li {
+    margin: 0 15px;
+    padding: 0;
+    line-height: 42px;
+}
+
+.console .layui-fluid .layuiadmin-latestData .layui-tab-title li.layui-this {
+    color: #333
+}
+
+.main1 .layui-fluid {
+    padding: 15px;
+    background-color: #f2f2f2
+}
+
+.main1 .layui-fluid .layuiadmin-card-text {
+    background-color: #f8f8f8;
+    color: #777;
+    padding: 24px;
+}
+
+.main1 .layui-fluid .layuiadmin-card-text .layui-text-top {
+    padding-bottom: 10px;
+}
+
+.main1 .layui-fluid .layuiadmin-card-text .layui-text-top i {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #009688;
+}
+
+.main1 .layui-fluid .layuiadmin-card-text .layui-text-center {
+    height: 44px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.main1 .layui-fluid .layuiadmin-card-text .layui-text-bottom {
+    position: relative;
+}
+
+.main1 .layui-fluid .layuiadmin-card-text .layui-text-bottom a {
+    color: #777;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+.main1 .layui-fluid .layuiadmin-card-text .layui-text-bottom span {
+    color: #CCC;
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+}
+
+.main1 .layui-fluid .layuiadmin-card-link {
+    padding-left: 10px;
+    font-size: 0;
+}
+
+.main1 .layui-fluid .layuiadmin-card-link a {
+    display: inline-block;
+    width: 25%;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.main1 .layui-fluid .layuiadmin-card-link button {
+    vertical-align: top;
+}
+
+.main1 .layui-fluid #datatotal .layui-row {
+    padding: 0;
+    background-color: #fff;
+}
+
+.main1 .layui-fluid #datatotal .layuiadmin-backlog-body {
+    display: block;
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    color: #999;
+    border-radius: 2px;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    cursor: pointer;
+}
+
+.main1 .layui-fluid #datatotal .layuiadmin-backlog-body h3 {
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+.main1 .layui-fluid #datatotal .layuiadmin-backlog-body p cite {
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 300;
+    color: #009688;
+}
+
+.main1 .layui-fluid .layuiadmin-card-team li {
+    padding: 10px 0 10px 10px;
+    cursor: pointer;
+}
+
+.main1 .layui-fluid .layuiadmin-card-team li a span {
+    color: #777
+}
+
+.main1 .layui-fluid .layuiadmin-card-team .layui-team-img {
+    display: inline-block;
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 50%;
+    background-color: #009688;
+}
+
+.main1 .layui-fluid .layuiadmin-card-team .layui-team-img img {
+    width: 50%;
+    height: 50%;
+}
+
+.main1 .layui-fluid .layuiadmin-card-status {
+    padding: 0 10px 10px;
+}
+
+.main1 .layui-fluid .layuiadmin-card-status dd {
+    padding: 15px 0;
+    border-bottom: 1px solid #EEE;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.main1 .layui-fluid .layuiadmin-card-status dd .layui-status-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #009688;
+    margin-right: 15px;
+}
+
+.main1 .layui-fluid .layuiadmin-card-status dd .layui-status-img a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    line-height: 32px;
+}
+
+.main1 .layui-fluid .layuiadmin-card-status dd div a {
+    color: #01AAED;
+}
+
+.main1 .layui-fluid .layuiadmin-card-status dd div span {
+    color: #BBB;
+}
+
+.main2 .layui-fluid {
+    padding: 15px;
+    background-color: #f2f2f2
+}
+
+.main2 .layui-fluid .layuiadmin-badge {
+    top: 50%;
+    margin-top: -9px;
+    color: #01AAED;
+}
+
+.main2 .layui-fluid .layuiadmin-badge,
+.main2 .layui-fluid .layuiadmin-btn-group,
+.main2 .layui-fluid .layuiadmin-span-color {
+    position: absolute;
+    right: 15px;
+}
+
+.main2 .layui-fluid .layuiadmin-card-list {
+    padding: 15px;
+}
+
+.main2 .layui-fluid .layuiadmin-card-list p.layuiadmin-big-font {
+    font-size: 36px;
+    color: #666;
+    line-height: 36px;
+    padding: 5px 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: nowrap;
+}
+
+.main2 .layui-fluid .layuiadmin-span-color {
+    font-size: 14px;
+}
+
+.main2 .layui-fluid .layuiadmin-span-color i {
+    padding-left: 5px;
+}
+
+.main2 .layui-fluid .layuiadmin-badge,
+.main2 .layui-fluid .layuiadmin-btn-group,
+.main2 .layui-fluid .layuiadmin-span-color {
+    position: absolute;
+    right: 15px;
+}
+
+.main2 .layui-fluid #download {
+    height: 300px;
+    width: 100%;
+}
+
+.main2 .layui-fluid .layuiadmin-card-list p.layuiadmin-normal-font {
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #666;
+    line-height: 24px;
+}
+
+.main2 .layui-fluid .layuiadmin-card-status {
+    padding: 0 10px 10px;
+}
+
+.main2 .layui-fluid .layuiadmin-card-status li {
+    position: relative;
+    padding: 10px 0;
+    border-bottom: 1px solid #EEE;
+}
+
+.main2 .layui-fluid .layuiadmin-card-status li h3 {
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+.main2 .layui-fluid .layuiadmin-card-status li p {
+    padding-bottom: 10px;
+}
+
+.main2 .layui-fluid .layuiadmin-card-status li>span {
+    color: #999;
+}
+
+.main2 .layui-fluid .layuiadmin-reply {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 12px;
+    cursor: pointer;
+}
+
+.main2 .layui-fluid .layuiadmin-page-table td span.first {
+    color: #FF5722;
+}
+
+.main2 .layui-fluid .layuiadmin-page-table td span.second {
+    color: #FFB800;
+}
+
+.main2 .layui-fluid .layuiadmin-page-table td span.third {
+    color: #5FB878;
+}
+
+.webuser .layui-fluid {
+    padding: 15px;
+    background-color: #f2f2f2
+}
+
+.webuser .layui-fluid .layui-row {
+    background-color: #fff
+}
+
+.webuser .layui-fluid .layui-row .layuiadmin-form {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: auto;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.webuser .layui-fluid .layui-row .layuiadmin-form .layui-form-item:last-child {
+    margin-bottom: 0;
+}
+
+.webuser .layui-fluid .layui-row .layuiadmin-webuser-body {
+    padding: 10px 15px;
+    line-height: 24px;
+}
+
+.adminUser .layui-fluid {
+    padding: 15px;
+    background-color: #f2f2f2
+}
+
+.adminUser .layui-fluid .layui-row {
+    background-color: #fff
+}
+
+.adminUser .layui-fluid .layui-row .layuiadmin-form {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: auto;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.adminUser .layui-fluid .layui-row .layuiadmin-form .layui-form-item:last-child {
+    margin-bottom: 0;
+}
+
+.adminUser .layui-fluid .layui-row .layuiadmin-webuser-body {
+    padding: 10px 15px;
+    line-height: 24px;
+}
+
+.role .layui-fluid {
+    padding: 15px;
+    background-color: #f2f2f2
+}
+
+.role .layui-fluid .layui-row {
+    background-color: #fff
+}
+
+.role .layui-fluid .layui-row .layuiadmin-form {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    height: auto;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.role .layui-fluid .layui-row .layuiadmin-form .layui-form-item:last-child {
+    margin-bottom: 0;
+}
+
+.role .layui-fluid .layui-row .layuiadmin-webuser-body {
+    padding: 10px 15px;
+    line-height: 24px;
+}
+
+.webset .layui-fluid {
+    padding: 15px;
+    background-color: #f2f2f2
+}
+
+.webset .layui-fluid .layui-row {
+    background-color: #fff
+}
+
+.webset .layui-fluid .layui-row .layui-form .layui-form-label {
+    width: 100px;
+}
+
+.webset .layui-fluid .layui-row .layui-form .layui-input-block {
+    margin-left: 130px;
+}
+
+.webset .layui-fluid .layui-row .layui-form .layui-form-item .layui-input-company {
+    width: auto;
+    padding-right: 10px;
+    line-height: 38px;
+}
+
+.mailset .layui-fluid {
+    padding: 15px;
+    background-color: #f2f2f2
+}
+
+.mailset .layui-fluid .layui-row {
+    background-color: #fff
+}
+
+.mailset .layui-fluid .layui-row .layui-form .layui-form-label {
+    width: 100px;
+}
+
+.mailset .layui-fluid .layui-row .layui-form .layui-input-block {
+    margin-left: 130px;
+}
+
+.profit .layui-fluid {
+    padding: 15px;
+    background-color: #f2f2f2
+}
+
+.profit .layui-fluid .layui-row {
+    background-color: #fff
+}
+
+.savepwd .layui-fluid {
+    padding: 15px;
+    background-color: #f2f2f2
+}
+
+.savepwd .layui-fluid .layui-row {
+    background-color: #fff
+}
+
+.maillist .layui-fluid {
+    padding: 15px;
+    background-color: #f2f2f2
+}
+
+.maillist .layui-fluid .layui-row {
+    background-color: #f2f2f2
+}
+
+.maillist .layadmin-contact-box {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e7eaec;
+    overflow: hidden;
+}
+
+.maillist .layadmin-text-center {
+    text-align: center;
+}
+
+.maillist .layadmin-text-center img {
+    max-width: 80%;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.maillist .layadmin-maillist-img {
+    margin-top: 5px;
+}
+
+.maillist .layadmin-font-blod {
+    font-weight: 600;
+}
+
+.maillist .layadmin-padding-left20 {
+    padding-left: 20px;
+}
+
+.maillist .layadmin-title {
+    margin: 5px 0 10px;
+}
+
+.maillist .layadmin-textimg {
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.maillist .layadmin-address {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.customerlist .layui-fluid {
+    padding: 15px;
+    background-color: #f2f2f2
+}
+
+.customerlist .layui-fluid .layui-row {
+    background-color: #fff
+}
+
+.customerlist .layadmin-caller {
+    background: #fff;
+    padding: 30px;
+}
+
+.customerlist .layadmin-caller .caller-seach {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.customerlist .layadmin-caller .caller-seach .caller-icon {
+    font-size: 18px;
+    position: absolute;
+    top: 9px;
+}
+
+.customerlist .layadmin-caller .caller-seach-icon {
+    left: 6px;
+}
+
+.customerlist .layadmin-caller .caller-pl32 {
+    padding: 0 32px;
+}
+
+.customerlist .layadmin-caller .caller-dump-icon {
+    right: 6px;
+    cursor: pointer;
+}
+
+.customerlist .layadmin-caller .caller-tab {
+    margin: 0;
+}
+
+.customerlist .layadmin-caller .caller-contar {
+    padding-bottom: 20px;
+}
+
+.customerlist .layadmin-caller .caller-contar .caller-item {
+    padding: 25px 0;
+    overflow: hidden;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.customerlist .layadmin-caller .caller-contar .caller-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.customerlist .layadmin-caller .caller-fl {
+    float: left;
+}
+
+.customerlist .layadmin-caller .caller-contar .caller-item .caller-main {
+    margin-left: 20px;
+}
+
+.customerlist .layadmin-caller .caller-contar .caller-item .caller-main p {
+    line-height: 100%;
+    padding: 8px 0;
+}
+
+.customerlist .layadmin-caller .caller-contar .caller-item .caller-main p:first-child {
+    padding-top: 0;
+}
+
+.customerlist .layadmin-caller .caller-contar .caller-item .caller-main .caller-adds {
+    padding-bottom: 12px;
+}
+
+.customerlist .layadmin-caller .caller-contar .caller-iconset i {
+    margin: 0 5px;
+}
+
+.customerlist .layadmin-caller .caller-contar .caller-iconset i:first-child {
+    margin-left: 0;
+}
+
+.customerlist .layadmin-caller .caller-contar button {
+    margin-top: 22px;
+}
+
+.customerlist .layadmin-caller .caller-fr {
+    float: right;
+}
+
+.productlist .layui-fluid {
+    padding: 15px;
+    background-color: #f2f2f2
+}
+
+.productlist .layui-fluid .layui-row {
+    background-color: #fff
+}
+
+.productlist .layadmin-cmdlist-fluid {
+    padding-bottom: 60px;
+}
+
+.productlist .cmdlist-container {
+    background: #fff;
+    border: 1px solid transparent;
+}
+
+.productlist .cmdlist-container img {
+    width: 100%;
+}
+
+.productlist .cmdlist-text {
+    padding: 20px;
+}
+
+.productlist .cmdlist-text .info {
+    height: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+    overflow: hidden;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.productlist .cmdlist-text .price {
+    font-size: 14px;
+}
+
+.productlist .cmdlist-text .price b {
+    margin-right: 20px;
+}
+
+.productlist .cmdlist-text .flow {
+    text-align: right;
+    float: right;
+}
+
+.productlist #product {
+    text-align: center;
+}
+
+.articlelist .layui-fluid {
+    padding: 15px;
+    background-color: #f2f2f2
+}
+
+.articlelist .layui-fluid .layui-row {
+    background-color: #fff
+}
+
+.articlelist .layui-fluid .layui-row .layuiadmin-form {
+    padding-top: 15px;
+    height: auto;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.articlelist .layui-fluid .layui-row .layuiadmin-article-body {
+    padding: 10px 15px;
+    line-height: 24px;
+}
+
+.manageclass .layui-fluid {
+    padding: 15px;
+    background-color: #f2f2f2
+}
+
+.manageclass .layui-fluid .layui-row {
+    background-color: #fff
+}
+
+.manageclass .layui-fluid .layui-row .layuiadmin-manager-body {
+    padding: 10px 15px;
+    line-height: 24px;
+}
+
+.messagecenter .layui-fluid {
+    padding: 15px;
+    background-color: #f2f2f2
+}
+
+.messagecenter .layui-fluid .layui-row {
+    background-color: #fff
+}
+
+.messagecenter .layui-fluid .layui-row .layui-tab {
+    margin: 0;
+}
+
+.messagecenter .layui-fluid .layui-row .layui-tab-brief .layui-tab-content {
+    padding: 15px;
+}
+
+.worksystem .layui-fluid {
+    padding: 15px;
+    background-color: #f2f2f2
+}
+
+.worksystem .layui-fluid .layui-row {
+    background-color: #fff
+}
+
+.worksystem .layui-fluid .layui-row .layuiadmin-card-header-auto {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: auto;
+}
+
+.worksystem .layui-fluid .layui-row .layuiadmin-worksystem-body {
+    padding: 10px 15px;
+    line-height: 24px;
+}

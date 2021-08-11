@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后台管理员</title>
+    <link rel="stylesheet" href="./../static/libs/layui/css/layui.css">
+    <link rel="stylesheet" href="./../static/css/admin.css">
+</head>
+
+<body class="adminUser">
+    <div class="layui-fluid">
+        <div class="layui-row">
+            <div class="layui-col-md12 layui-form layuiadmin-form">
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">登录名</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="loginname" placeholder="请输入" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">手机</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="telphone" placeholder="请输入" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">邮箱</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="email" placeholder="请输入" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">角色</label>
+                        <div class="layui-input-block">
+                            <select name="role">
+                          <option value="0">管理员</option>
+                          <option value="1">超级管理员</option>
+                          <option value="2">纠错员</option>
+                          <option value="3">采购员</option>
+                          <option value="4">推销员</option>
+                          <option value="5">运营人员</option>
+                          <option value="6">编辑</option>
+                        </select>
+                            <div class="layui-unselect layui-form-select">
+                                <div class="layui-select-title"><input type="text" placeholder="请选择" value="管理员" readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div>
+                                <dl class="layui-anim layui-anim-upbit" style="">
+                                    <dd lay-value="0" class="layui-this">管理员</dd>
+                                    <dd lay-value="1" class="">超级管理员</dd>
+                                    <dd lay-value="2" class="">纠错员</dd>
+                                    <dd lay-value="3" class="">采购员</dd>
+                                    <dd lay-value="4" class="">推销员</dd>
+                                    <dd lay-value="5" class="">运营人员</dd>
+                                    <dd lay-value="6" class="">编辑</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <button class="layui-btn layuiadmin-btn-admin" lay-submit="" lay-filter="LAY-user-back-search">
+                        <i class="layui-icon layui-icon-search layuiadmin-button-btn"></i>
+                      </button>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md12 layuiadmin-webuser-body">
+                <div style="padding-bottom: 10px;">
+                    <button class="layui-btn layuiadmin-btn-useradmin" data-type="batchdel">删除</button>
+                    <button class="layui-btn layuiadmin-btn-useradmin" data-type="add">添加</button>
+                </div>
+                <table id="AdminuserTable" lay-filter="adminuserTable"></table>
+            </div>
+        </div>
+    </div>
+    <script type="text/html" id="adminTpl">
+        <a class="layui-btn layui-btn-normal layui-btn-xs" lay-event="edit"><i class="layui-icon layui-icon-edit"></i>编辑</a> {{# if(d.role == "超级管理员"){ }} <a class="layui-btn layui-btn-disabled  layui-btn-xs" lay-event="del"><i class="layui-icon layui-icon-delete"></i>删除</a>        {{# }else{ }} <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i class="layui-icon layui-icon-delete"></i>删除</a> {{# } }}
+    </script>
+    <script type="text/html" id="statusTpl">
+        {{# if(d.status
+        < 1){ }} <button class="layui-btn layui-btn-primary layui-btn-xs">未审核</button>
+            {{# }else{ }}
+            <button class="layui-btn layui-btn-xs">已审核</button> {{# } }}
+    </script>
+    <script src="./../static/js/jquery.min.js "></script>
+    <script src="./../static/libs/layui/layui.js "></script>
+    <script src="./../static/js/admin.js "></script>
+</body>
+
+</html>

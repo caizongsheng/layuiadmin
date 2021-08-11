@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>后台管理页面</title>
+    <link rel="stylesheet" href="./static/libs/layui/css/layui.css">
+    <link rel="stylesheet" href="./static/css/admin.css">
+</head>
+
+<body class="index">
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header">
+            <div class="layui-logo layui-hide-xs layui-bg-black">layuiadmin</div>
+            <!-- 头部区域（可配合layui 已有的水平导航） -->
+            <ul class="layui-nav layui-layout-left">
+                <!-- 移动端显示 -->
+                <li class="layui-nav-item layui-show-xs-inline-block layui-hide-sm" lay-header-event="menuLeft">
+                    <i class="layui-icon layui-icon-spread-left"></i>
+                </li>
+
+                <li class="layui-nav-item layui-hide-xs"><a href="">项目</a></li>
+                <li class="layui-nav-item layui-hide-xs"><a href="">工程</a></li>
+                <li class="layui-nav-item layui-hide-xs"><a href="">说明</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">分类</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">PHP</a></dd>
+                        <dd><a href="">JAVASCRIPT</a></dd>
+                        <dd><a href="">MYSQL</a></dd>
+                    </dl>
+                </li>
+            </ul>
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item" lay-unselect="">
+                    <a lay-href="app/message/index.html" layadmin-event="message" lay-text="消息中心">
+                        <i class="layui-icon layui-icon-notice"></i>
+
+                        <!-- 如果有新消息，则显示小圆点 -->
+                        <span class="layui-badge-dot"></span>
+                    </a>
+                </li>
+                <li class="layui-nav-item layui-hide-xs" lay-unselect="">
+                    <a href="javascript:;" layadmin-event="theme">
+                        <i class="layui-icon layui-icon-theme"></i>
+                    </a>
+                </li>
+                <li class="layui-nav-item layui-hide-xs" lay-unselect="">
+                    <a href="javascript:;" layadmin-event="note">
+                        <i class="layui-icon layui-icon-note"></i>
+                    </a>
+                </li>
+                <li class="layui-nav-item layui-hide-xs" lay-unselect="">
+                    <a href="javascript:;" layadmin-event="fullscreen">
+                        <i class="layui-icon layui-icon-screen-full"></i>
+                    </a>
+                </li>
+                <li class="layui-nav-item ">
+                    <a href="javascript:;">
+                        <img src="https://tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg" class="layui-nav-img"> admin
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:; " layuihref="home/profit.html" layuitext="基本资料" onclick="admin.tabtollge(this)">基本资料</a></dd>
+                        <dd><a href="javascript:; " layuihref="home/savepwd.html" layuitext="修改密码" onclick="admin.tabtollge(this)">修改密码</a></dd>
+                        <dd><a href="./login.html">退出</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
+                    <a href="javascript:;">
+                        <i class="layui-icon layui-icon-more-vertical"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="layui-side layui-bg-black ">
+            <div class="layui-side-scroll ">
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree " lay-filter="left-menu " lay-shrink="all">
+                    <li class="layui-nav-item layui-nav-itemed ">
+                        <a class=" " href="javascript:; "><i class="layui-icon layui-icon-home"></i><cite>主页</cite></a>
+                        <dl class="layui-nav-child">
+                            <dd class="layui-this"><a href="javascript:; " layuihref="home/console.html" layuitext="控制台" onclick="admin.tabtollge(this)">控制台</a></dd>
+                            <dd><a href="javascript:; " layuihref="home/main1.html" layuitext="主页一" onclick="admin.tabtollge(this)">主页一</a></dd>
+                            <dd><a href="javascript:; " layuihref="home/main2.html" layuitext="主页二" onclick="admin.tabtollge(this)">主页二</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a class=" " href="javascript:; "><i class="layui-icon layui-icon-user"></i><cite>用户</cite></a>
+                        <dl class="layui-nav-child ">
+                            <dd><a href="javascript:; " layuihref="home/webuser.html" layuitext="网站用户" onclick="admin.tabtollge(this)">网站用户</a></dd>
+                            <dd><a href="javascript:; " layuihref="home/adminuser.html" layuitext="后台管理员" onclick="admin.tabtollge(this)">后台管理员</a></dd>
+                            <dd><a href="javascript:; " layuihref="home/role.html" layuitext="角色管理" onclick="admin.tabtollge(this)">角色管理</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a class=" " href="javascript:; "><i class="layui-icon layui-icon-set"></i><cite>设置</cite></a>
+                        <dl class="layui-nav-child ">
+                            <dd><a href="javascript:; " layuihref="home/webset.html" layuitext="网站设置" onclick="admin.tabtollge(this)">网站设置</a></dd>
+                            <dd><a href="javascript:; " layuihref="home/mailset.html" layuitext="邮件服务" onclick="admin.tabtollge(this)">邮件服务</a></dd>
+                            <dd><a href="javascript:; " layuihref="home/profit.html" layuitext="基本资料" onclick="admin.tabtollge(this)">基本资料</a></dd>
+                            <dd><a href="javascript:; " layuihref="home/savepwd.html" layuitext="修改密码" onclick="admin.tabtollge(this)">修改密码</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item ">
+                        <a class=" " href="javascript:; "><i class="layui-icon layui-icon-template"></i><cite>页面</cite></a>
+                        <dl class="layui-nav-child ">
+                            <dd><a href="javascript:; " layuihref="home/maillist.html" layuitext="通讯录" onclick="admin.tabtollge(this)">通讯录</a></dd>
+                            <dd><a href="javascript:; " layuihref="home/customerlist.html" layuitext="客户列表" onclick="admin.tabtollge(this)">客户列表</a></dd>
+                            <dd><a href="javascript:; " layuihref="home/productlist.html" layuitext="商品列表" onclick="admin.tabtollge(this)">商品列表</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a class=" " href="javascript:; "><i class="layui-icon layui-icon-app"></i><cite>应用</cite></a>
+                        <dl class="layui-nav-child ">
+                            <dd>
+                                <a href="javascript:; " layuihref="home/articlelist.html" layuitext="文章列表" onclick="admin.tabtollge(this)">文章列表</a>
+                            </dd>
+                            <dd><a href="javascript:; " layuihref="home/manageclass.html" layuitext="分类管理" onclick="admin.tabtollge(this)">分类管理</a></dd>
+                            <dd><a href="javascript:; " layuihref="home/messagecenter.html" layuitext="消息中心" onclick="admin.tabtollge(this)">消息中心</a></dd>
+                            <dd><a href="javascript:; " layuihref="home/worksystem.html" layuitext="工单系统" onclick="admin.tabtollge(this)">工单系统</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--页面导航-->
+        <div class="layuiadmin-pagetabs">
+            <div class="layui-icon layuiadmin-tabs-control layui-icon-prev" layui-event="leftPage"></div>
+            <div class="layui-icon layuiadmin-tabs-control layui-icon-next" layui-event="rightPage"></div>
+            <div class="layui-icon layuiadmin-tabs-control layui-icon-down">
+                <ul class="layui-nav layuiadmin-tabs-select" lay-filter="layuiadmin-pagetabs-nav">
+                    <li class="layui-nav-item" lay-unselect>
+                        <a href="javascript:;"><i class="layui-icon layui-icon-down layui-nav-more tabicon"></i></a>
+                        <dl class="layui-nav-child layui-anim-fadein layui-anim layui-anim-upbit dlshow">
+                            <dd layui-event="closeThisTabs"><a href="javascript:;">关闭当前标签页</a></dd>
+                            <dd layui-event="closeOtherTabs"><a href="javascript:;">关闭其它标签页</a></dd>
+                            <dd layui-event="closeAllTabs"><a href="javascript:;">关闭全部标签页</a></dd>
+                        </dl>
+                    </li>
+                    <span class="layui-nav-bar" style="left: 0px; width: 0px; opacity: 0;"></span>
+                </ul>
+            </div>
+            <div class="layui-tab" lay-unauto="" lay-filter="layui-layout-tabs">
+                <ul class="layui-tab-title" id="LAY_app_tabsheader">
+                    <li lay-id="home/console.html" lay-attr="home/console.html" class="layui-this" onclick="admin.tabmenu(this)"><i class="layui-icon layui-icon-home"></i><i class="layui-icon layui-icon-close layui-unselect layui-tab-close"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="layui-body" id="app-body">
+            <!-- 内容主体区域 -->
+            <div class="layuiadmin-tabsbody-item layui-show" lay-attr="home/console.html">
+                <iframe src="home/console.html" frameborder="0" class="layuiadmin-iframe"></iframe>
+            </div>
+
+        </div>
+
+        <div class="layui-footer ">
+            <!-- 底部固定区域 -->
+            这是一个简易的layui后台模板
+        </div>
+    </div>
+    <script src="./static/js/jquery.min.js "></script>
+    <script src="./static/libs/layui/layui.js "></script>
+    <script src="./static/js/admin.js "></script>
+    <script>
+        //JS 
+        layui.use(['element', 'layer', 'util'], function() {
+            var element = layui.element,
+                layer = layui.layer,
+                util = layui.util,
+                $ = layui.$;
+
+            //头部事件
+            util.event('lay-header-event', {
+                //左侧菜单事件
+                menuLeft: function(othis) {
+                    layer.msg('展开左侧菜单的操作', {
+                        icon: 0
+                    });
+                },
+                menuRight: function() {
+                    layer.open({
+                        type: 1,
+                        content: '<div style="padding: 15px;">处理右侧面板的操作</div>',
+                        area: ['260px', '100%'],
+                        offset: 'rt',
+                        anim: 5,
+                        shadeClose: true
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
